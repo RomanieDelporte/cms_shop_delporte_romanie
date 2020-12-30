@@ -1,3 +1,5 @@
+@import "~bootstrap/scss/bootstrap";
+
 /*
 Theme Name: Webshop locale handelaar
 Author: Romanie Delporte
@@ -10,6 +12,8 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -19,12 +23,12 @@ html, body {
 }
 .custom-logo-link {
     display: block;
-    margin-right: 40rem;
     img {
-        height: 50px;
+        height: 40px;
         width: auto;
     }
 }
+
 body {
     background-color: white;
     font-family: 'Comfortaa';
@@ -35,8 +39,9 @@ body {
         background-color: white;
         display: flex;
         justify-content: flex-end;
-        padding: 1rem 3rem;
-        height: 8vh;
+        justify-content: space-between;
+        margin-top: 1rem;
+        // height: 8vh;
 
         ul{
             display: flex;
@@ -60,7 +65,7 @@ body {
 
             }
             &:not(:last-child) {
-                margin-right: 1.5rem;
+                margin-right: 3rem;
             }
         }
         main {
@@ -68,5 +73,25 @@ body {
             flex-direction: column;
             flex: 1;
         }
+
+        
+    }
+
+    footer {
+        display: flex;
+        padding: 1rem 1rem;
+        background-color: lightgrey;
+        .footer {
+             &__nav {
+                 h1 {
+                     color: #8B6464;
+                 }
+                 p{
+                     margin-left: 0.5rem;
+                 }
+             }
+        }
+
+        
     }
 }
