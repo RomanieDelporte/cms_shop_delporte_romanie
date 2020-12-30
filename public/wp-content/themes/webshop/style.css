@@ -1,0 +1,74 @@
+/*
+Theme Name: Webshop locale handelaar
+Author: Romanie Delporte
+Description: webshop locale handelaar
+Version: 0.1
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.3.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+.custom-logo-link {
+  display: block;
+  margin-right: 40rem;
+}
+
+.custom-logo-link img {
+  height: 50px;
+  width: auto;
+}
+
+body {
+  background-color: white;
+  font-family: "Comfortaa";
+}
+
+body .navigation {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 3rem;
+  height: 8vh;
+}
+
+body .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+body .navigation li a {
+  text-decoration: none;
+  color: black;
+  color: inherit;
+  font-weight: bold;
+}
+
+body .navigation li a:hover {
+  color: #8B6464;
+}
+
+body .navigation li:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+body .navigation main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
