@@ -16,6 +16,8 @@ function addCustomLogo() {
     ));
 }
 
+
+
 //logo toevoegen
 add_action( 'after_setup_theme', 'addCustomLogo');
 add_action( 'init', 'addTitleTag');

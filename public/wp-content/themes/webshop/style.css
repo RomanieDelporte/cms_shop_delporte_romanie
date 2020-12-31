@@ -1,4 +1,94 @@
-@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;
+
+400;500;600;700&display=swap);@charset "UTF-8";
+
+/*
+Theme Name: Webshop locale handelaar
+Author: Romanie Delporte
+Description: webshop locale handelaar
+Version: 0.1
+Requires at least: 5.0
+Tested up to: 5.6
+Requires PHP: 7.3.5
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: "Comfortaa";
+}
+
+footer {
+  display: flex;
+  padding: 1rem 1rem;
+  background-color: #C1C1C1;
+}
+
+footer .footer__nav h1,
+footer .footer__nav .h1 {
+  color: #8B6464;
+}
+
+footer .footer__nav p {
+  margin-left: 0.5rem;
+}
+
+.custom-logo-link {
+  display: block;
+}
+
+.custom-logo-link img {
+  height: 40px;
+  width: auto;
+}
+
+body {
+  font-family: "Comfortaa";
+}
+
+body .navigation {
+  background-color: #FFF;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: 8vh;
+}
+
+body .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-top: 1rem;
+}
+
+body .navigation li a {
+  text-decoration: none;
+  color: black;
+  color: inherit;
+  font-weight: bold;
+}
+
+body .navigation li a:hover {
+  color: #8B6464;
+}
+
+body .navigation li:not(:last-child) {
+  margin-right: 3rem;
+}
+
+body .navigation main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
 
 /*!
  * Bootstrap v5.0.0-beta1 (https://getbootstrap.com/)
@@ -48,7 +138,7 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Comfortaa";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -6168,7 +6258,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6293,7 +6383,7 @@ fieldset:disabled .btn {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: var(--bs-font-sans-serif);
+  font-family: "Comfortaa";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -11590,91 +11680,59 @@ fieldset:disabled .btn {
   }
 }
 
-/*
-Theme Name: Webshop locale handelaar
-Author: Romanie Delporte
-Description: webshop locale handelaar
-Version: 0.1
-Requires at least: 5.0
-Tested up to: 5.6
-Requires PHP: 7.3.5
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
-* {
-  margin: 0;
-  padding: 0;
+.home {
+  width: 100%;
+  height: 350px;
 }
 
-html,
-body {
-  min-height: 100vh;
+.home img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.custom-logo-link {
-  display: block;
+.bg {
+  background-color: #8B6464;
 }
 
-.custom-logo-link img {
-  height: 40px;
-  width: auto;
-}
-
-body {
-  background-color: white;
-  font-family: "Comfortaa";
-}
-
-body .navigation {
-  background-color: white;
-  display: flex;
-  justify-content: flex-end;
-  justify-content: space-between;
-  margin-top: 1rem;
-}
-
-body .navigation ul {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
+.bg__info {
   padding-top: 1rem;
+  align-self: center;
 }
 
-body .navigation li a {
-  text-decoration: none;
-  color: black;
-  color: inherit;
+.bg__info h2,
+.bg__info .h2 {
+  font-size: 3rem;
   font-weight: bold;
 }
 
-body .navigation li a:hover {
+.bg__info p {
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+.bg__info .btn {
+  background-color: #FFF;
   color: #8B6464;
+  margin-left: 0.4rem;
 }
 
-body .navigation li:not(:last-child) {
-  margin-right: 3rem;
-}
-
-body .navigation main {
+.bg .row {
   display: flex;
-  flex-direction: column;
-  flex: 1;
 }
 
-body footer {
-  display: flex;
-  padding: 1rem 1rem;
-  background-color: lightgrey;
+.bg .row.right {
+  flex-direction: row-reverse;
 }
 
-body footer .footer__nav h1,
-body footer .footer__nav .h1 {
-  color: #8B6464;
-}
-
-body footer .footer__nav p {
-  margin-left: 0.5rem;
+.bg .row img {
+  width: 45%;
+  height: 30%;
+  margin-right: 9rem;
+  margin-bottom: 1rem;
+  margin-top: -1rem;
+  padding: 2rem;
 }
 

@@ -1,0 +1,58 @@
+@import '../1-abstracts/colors';
+
+
+.custom-logo-link {
+    display: block;
+    img {
+        height: 40px;
+        width: auto;
+    }
+}
+
+body {    
+    font-family: 'Comfortaa';
+    // navigation header
+    .navigation {
+        background-color: $color-white;
+        display: flex;
+        justify-content: flex-end;
+        justify-content: space-between;
+        margin-top: 1rem;
+        height: 8vh;
+
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            list-style: none;
+            padding-top: 1rem;
+        }
+
+        li {
+           
+            a {
+                text-decoration: none;
+                color: black;
+                color: inherit;
+                font-weight: bold;
+
+                &:hover {
+                    color:$color-bordeaux;
+                }
+
+            }
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        
+    }
+
+    
+}

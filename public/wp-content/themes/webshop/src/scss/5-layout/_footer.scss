@@ -1,0 +1,20 @@
+@import '../1-abstracts/colors';
+
+footer {
+    display: flex;
+    padding: 1rem 1rem;
+    background-color: $color-grey;
+    .footer {
+         &__nav {
+             h1 {
+                 color: $color-bordeaux;
+             }
+             p{
+                 margin-left: 0.5rem;
+             }
+
+         }
+    }
+
+    
+}
