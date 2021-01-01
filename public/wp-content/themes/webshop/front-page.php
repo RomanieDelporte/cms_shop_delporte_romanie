@@ -32,30 +32,36 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-<?php
-        $newsArticles = new WP_Query( array(
-            'category_name' => 'opticien',
-            'posts_per_page' => 2
-        ));
+<div class="container">
+    <div class="row">
+        <?php
+            $posts = new WP_Query( array(
+                'category_name' => 'opticien',
+                'posts_per_page' => 2
+            ));
 
-        while($newsArticles->have_posts()) {
-            $newsArticles->the_post() ?>
-            <div class=" col-6 blog">
-
-                <h2>
-                        <a href="<?php the_permalink() ?>">
-                            <?= the_title() ?>
-                        </a>
-                </h2>
-                <p><?= the_content() ?></p>
-            </div>
-            
-            
-        <?php } wp_reset_postdata(); ?>
-    </div>
-    </div>
+            while($posts->have_posts()) {
+                $posts->the_post() ?>
+                <div class=" col-6 card">
+                    <h4>
+                            <a href="<?php the_permalink() ?>">
+                                <?= the_title() ?>
+                            </a>
+                    </h4>
+                    <!-- <?php
+                    // if(has_excerpt()) {
+                    //     the_excerpt();
+                    // } else {
+                    //     echo wp_trim_words(get_the_content(), 15);
+                    // } ?> -->
+                    <p><?= the_content() ?></p>
+                </div>
+                
+                
+                
+            <?php } wp_reset_postdata(); ?>
+        </div>
+</div>
 
 
 <?php get_footer(); ?>

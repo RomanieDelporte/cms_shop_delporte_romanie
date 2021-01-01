@@ -43,14 +43,31 @@
     }
 }
 
+.container {
+    .row {
+        justify-content: space-between;
+    } 
+     .card {
+        width: 40%;
+        display: block;
+        padding: 1rem;
+        border: 4px solid $color-bordeaux;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        
+        a {
+            color: $color-bordeaux;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        p {
+            font-weight: 200;
+        }
+        p:hover {
+            color: $color-bordeaux;
+            font-weight: bold;
+        }
+    }
+}
 
-//     .blog {
-//         width: 50%;
-//     display: block;
-//     padding: 1rem;
-//     background-color: $color-bordeaux;
-//     border: 2px solid $color-bordeaux;
-//     margin-bottom: 2rem;
-//     margin-top: 2rem
-// }
 
