@@ -27,7 +27,6 @@ body {
 footer {
   display: flex;
   padding: 1rem 1rem;
-  background-color: #C1C1C1;
 }
 
 footer .footer__nav h1,
@@ -37,6 +36,31 @@ footer .footer__nav .h1 {
 
 footer .footer__nav p {
   margin-left: 0.5rem;
+}
+
+footer .footer__products {
+  margin-top: 0.5rem;
+}
+
+footer .footer__products h3,
+footer .footer__products .h3 {
+  color: #8B6464;
+}
+
+footer .footer .footer-form {
+  margin-top: 1rem;
+  border: none;
+}
+
+footer .footer .footer-form .widget-title {
+  font-size: 25px;
+}
+
+footer .footer .footer-form input {
+  border-bottom: 2px solid #8B6464;
+  padding: 0.2rem;
+  margin-left: -2%;
+  margin-top: 2rem;
 }
 
 .custom-logo-link {
@@ -11736,8 +11760,8 @@ fieldset:disabled .btn {
   padding: 2rem;
 }
 
-.container .row {
-  justify-content: space-between;
+.container .posts {
+  justify-content: space-around;
 }
 
 .container .card {
@@ -11757,10 +11781,5 @@ fieldset:disabled .btn {
 
 .container .card p {
   font-weight: 200;
-}
-
-.container .card p:hover {
-  color: #8B6464;
-  font-weight: bold;
 }
 

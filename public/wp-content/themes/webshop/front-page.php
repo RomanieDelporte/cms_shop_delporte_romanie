@@ -33,7 +33,7 @@
         </div>
     </div>
 <div class="container">
-    <div class="row">
+    <div class="row posts">
         <?php
             $posts = new WP_Query( array(
                 'category_name' => 'opticien',
@@ -48,16 +48,8 @@
                                 <?= the_title() ?>
                             </a>
                     </h4>
-                    <!-- <?php
-                    // if(has_excerpt()) {
-                    //     the_excerpt();
-                    // } else {
-                    //     echo wp_trim_words(get_the_content(), 15);
-                    // } ?> -->
                     <p><?= the_content() ?></p>
                 </div>
-                
-                
                 
             <?php } wp_reset_postdata(); ?>
         </div>

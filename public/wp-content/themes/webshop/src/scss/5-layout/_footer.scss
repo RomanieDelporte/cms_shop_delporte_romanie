@@ -3,7 +3,6 @@
 footer {
     display: flex;
     padding: 1rem 1rem;
-    background-color: $color-grey;
     .footer {
          &__nav {
              h1 {
@@ -12,7 +11,30 @@ footer {
              p{
                  margin-left: 0.5rem;
              }
+            
 
+
+         }
+
+         &__products {
+             margin-top: 0.5rem;
+             h3 {
+                 color: $color-bordeaux;
+             }
+         }
+
+         .footer-form {
+            margin-top: 1rem;
+            border:none;
+            .widget-title {
+                font-size: 25px;
+            }
+            input {
+                border-bottom: 2px solid $color-bordeaux;
+                padding: 0.2rem;
+                margin-left: -2%;
+                margin-top: 2rem;
+            }
          }
     }
 

@@ -44,8 +44,8 @@
 }
 
 .container {
-    .row {
-        justify-content: space-between;
+    .posts {
+        justify-content: space-around;
     } 
      .card {
         width: 40%;
@@ -62,10 +62,6 @@
         }
         p {
             font-weight: 200;
-        }
-        p:hover {
-            color: $color-bordeaux;
-            font-weight: bold;
         }
     }
 }
