@@ -4,24 +4,43 @@ footer {
     display: flex;
     padding: 1rem 1rem;
     .footer {
-         &__nav {
+         &__contact {
              h1 {
                  color: $color-bordeaux;
+                 font-size: 40px;
              }
              p{
                  margin-left: 0.5rem;
+                 margin-top: 1rem;
              }
             
 
 
          }
 
-         &__products {
+         &__nav {
              margin-top: 0.5rem;
-             h3 {
-                 color: $color-bordeaux;
+
+             ul{
+                 list-style: none;
+                 margin-left: -2rem;
              }
-         }
+
+             li {
+                 padding: 0.5rem;
+                 a {
+                     text-decoration: none;
+                     color: $color-black;
+                 }
+                 a:hover {
+                     color: $color-bordeaux;
+                 }
+             }
+             h2{
+                 color: $color-bordeaux;
+                 font-weight: 100;
+             
+                }
 
          .footer-form {
             margin-top: 1rem;
@@ -37,6 +56,6 @@ footer {
             }
          }
     }
-
+    }
     
 }

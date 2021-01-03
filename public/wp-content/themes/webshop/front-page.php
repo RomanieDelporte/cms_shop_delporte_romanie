@@ -20,9 +20,10 @@
                     the_row();
                     $image = get_sub_field('image');
                     $align = get_sub_field('align'); ?>
+    
                     <div class="row <?php echo $align ?>">
                         <?php if($image) {
-                            echo wp_get_attachment_image( $image, 'thumbnail' );
+                            echo wp_get_attachment_image( $image, 'large');
                         } ?>
                     </div>
 
@@ -36,23 +37,51 @@
     <div class="row posts">
         <?php
             $posts = new WP_Query( array(
-                'category_name' => 'opticien',
+                'category_name' => 'Brillen',
                 'posts_per_page' => 2
             ));
 
             while($posts->have_posts()) {
                 $posts->the_post() ?>
                 <div class=" col-6 card">
+                    <img
                     <h4>
                             <a href="<?php the_permalink() ?>">
                                 <?= the_title() ?>
+                                <p><?= the_content() ?></p>
                             </a>
                     </h4>
-                    <p><?= the_content() ?></p>
+                    
+
                 </div>
                 
             <?php } wp_reset_postdata(); ?>
         </div>
+</div>
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class=" col-6 banner_picture">
+                        <?php 
+                $image = get_field('image');
+                $size = 'large';
+                if( $image ) {
+                    echo wp_get_attachment_image( $image, $size );
+                }
+                ?>
+            </div>
+             <div class=" col-6 banner_widget">
+                <h2><?php the_field('textfield'); ?></h2>
+                <?php if (is_active_sidebar( 'search-form' )) { ?>
+                <aside class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'search-form' ); ?>
+                </aside>
+                <?php } ?>
+                <div class="banner_field">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
