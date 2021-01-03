@@ -11843,6 +11843,7 @@ fieldset:disabled .btn {
 }
 
 .post {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -11885,9 +11886,11 @@ fieldset:disabled .btn {
 .post__tags a {
   color: #000;
   text-decoration: none;
-  border: 2px solid #8B6464;
   border-radius: 10px;
   padding: 0.2rem;
-  margin-right: 2%;
+  margin-left: 2%;
+  background-color: #8B6464;
+  color: #FFF;
+  align-self: center;
 }
 
