@@ -4,15 +4,20 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     &__info {
-        margin-top: 5rem;
 
         h2 {
             color: $color-bordeaux;
         }
     }
 
+  
+
     &__category {
         display: flex;
+
+        p{ 
+            color: $color-bordeaux;
+        }
         ul{
             list-style: none;
             display: flex;
@@ -20,17 +25,22 @@
         li {
             list-style: none;
             margin-right: 2%;
-            background-color: $color-bordeaux;
+            border: 2px solid $color-bordeaux;
             border-radius: 10px;
             a{
-                 color: $color-bordeaux;
                  text-decoration: none;
-                 color: $color-white;
                  padding: 2rem;
+                 color: $color-black;
+
              }
+
         }  
     }
     &__tags {
+        p {
+            margin-top: 2%;
+            color: $color-bordeaux;
+        }
         display: flex;
 
         a {
@@ -39,8 +49,8 @@
             border-radius: 10px;
             padding: 0.2rem;
             margin-left: 2%;
-            background-color: $color-bordeaux;
-            color: $color-white;
+            border: 2px solid $color-bordeaux;
+            color: $color-black;
             align-self: center;
         }
     }

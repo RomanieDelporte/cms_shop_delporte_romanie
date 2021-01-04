@@ -3,6 +3,7 @@
 footer {
     display: flex;
     padding: 1rem 1rem;
+    border-top: 2px solid $color-grey;
     .footer {
          &__contact {
              h1 {

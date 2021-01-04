@@ -12,9 +12,6 @@
 <header>
     <div class="container">
         <nav class="navigation">
-        <!-- Hier defineer je het logo zo wordt hij op elke pagina gerenderd 
-             Function_exists ga checken of de functie bestaat in functions.php
-            -->
             <?php 
                 if( function_exists( 'the_custom_logo') ) {
                     the_custom_logo();

@@ -1,5 +1,5 @@
 <?php if(has_post_thumbnail()) { ?>
     <div class="home">
-        <?php the_post_thumbnail('large'); ?>
+        <?php the_post_thumbnail('medium'); ?>
     </div>
- <?php } ?>
+<?php } ?>

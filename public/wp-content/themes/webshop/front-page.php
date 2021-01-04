@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('components/home') ?>
+<?php get_template_part('components/featured/large') ?>
 
 </div>
 

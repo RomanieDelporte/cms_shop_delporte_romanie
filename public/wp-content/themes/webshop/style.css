@@ -27,6 +27,7 @@ body {
 footer {
   display: flex;
   padding: 1rem 1rem;
+  border-top: 2px solid #C1C1C1;
 }
 
 footer .footer__contact h1,
@@ -11842,13 +11843,14 @@ fieldset:disabled .btn {
   padding: 1rem;
 }
 
-.post {
+.contact {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.post__info {
-  margin-top: 5rem;
+.post {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .post__info h2,
@@ -11860,6 +11862,10 @@ fieldset:disabled .btn {
   display: flex;
 }
 
+.post__category p {
+  color: #8B6464;
+}
+
 .post__category ul {
   list-style: none;
   display: flex;
@@ -11868,19 +11874,23 @@ fieldset:disabled .btn {
 .post__category li {
   list-style: none;
   margin-right: 2%;
-  background-color: #8B6464;
+  border: 2px solid #8B6464;
   border-radius: 10px;
 }
 
 .post__category li a {
-  color: #8B6464;
   text-decoration: none;
-  color: #FFF;
   padding: 2rem;
+  color: #000;
 }
 
 .post__tags {
   display: flex;
+}
+
+.post__tags p {
+  margin-top: 2%;
+  color: #8B6464;
 }
 
 .post__tags a {
@@ -11889,8 +11899,8 @@ fieldset:disabled .btn {
   border-radius: 10px;
   padding: 0.2rem;
   margin-left: 2%;
-  background-color: #8B6464;
-  color: #FFF;
+  border: 2px solid #8B6464;
+  color: #000;
   align-self: center;
 }
 
