@@ -1,0 +1,26 @@
+@import '../abstracts/colors';
+
+
+.container {
+    .posts {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 40%;
+        display: block;
+        padding: 1rem; 
+        border: 3px solid $color-bordeaux;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+
+        a{
+            color: $color-bordeaux;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        p{
+            font-weight: bold;
+        }
+    }
+}

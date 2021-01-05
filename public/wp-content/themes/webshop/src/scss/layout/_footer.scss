@@ -1,4 +1,4 @@
-@import '../1-abstracts/colors';
+@import '../abstracts/colors';
 
 footer {
     display: flex;
@@ -45,15 +45,17 @@ footer {
 
          .footer-form {
             margin-top: 1rem;
-            border:none;
             .widget-title {
                 font-size: 25px;
             }
             input {
-                border-bottom: 2px solid $color-bordeaux;
-                padding: 0.2rem;
-                margin-left: -2%;
+                border: 2px solid $color-bordeaux;
+                padding: 0.4rem;
                 margin-top: 2rem;
+            }
+            .signup_button {
+                background-color: $color-bordeaux;
+                color: $color-white;
             }
          }
     }

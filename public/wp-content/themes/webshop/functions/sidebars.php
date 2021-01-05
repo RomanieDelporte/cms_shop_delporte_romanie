@@ -20,6 +20,16 @@ function Search() {
         'after_widget' => '</div>',
     ));
 }
+function Contact() {
+    register_sidebar( array(
+        'name' => __('Contact Area', 'contact_form'),
+        'id' => 'contact-form',
+        'description' => __('Description', 'contact_form'),
+        'before_widget' => '<div class="contact-form">',
+        'after_widget' => '</div>',
+    ));
+}
 
 add_action('widgets_init', 'NewsLetterSignup');
 add_action('widgets_init', 'Search');
+add_action('widgets_init', 'Contact');

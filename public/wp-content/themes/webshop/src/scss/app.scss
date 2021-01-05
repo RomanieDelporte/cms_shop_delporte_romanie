@@ -12,7 +12,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
-@import './1-abstracts/variables';
+@import './abstracts/variables';
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +23,10 @@ html, body {
 }
 
 
- @import './5-layout/footer';
- @import './5-layout/header';
- @import './1-abstracts/index';
- @import './2-vendor/index';
- @import './4-components/featured';
- @import './6-pages/index';
+ @import './layout/footer';
+ @import './layout/header';
+ @import './abstracts/index';
+ @import './vendor/index';
+ @import './components/featured';
+ @import './pages/index';
+ @import './pages/newspage.scss'

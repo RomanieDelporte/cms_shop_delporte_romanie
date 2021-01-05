@@ -71,7 +71,6 @@ footer .footer__nav .h2 {
 
 footer .footer__nav .footer-form {
   margin-top: 1rem;
-  border: none;
 }
 
 footer .footer__nav .footer-form .widget-title {
@@ -79,10 +78,14 @@ footer .footer__nav .footer-form .widget-title {
 }
 
 footer .footer__nav .footer-form input {
-  border-bottom: 2px solid #8B6464;
-  padding: 0.2rem;
-  margin-left: -2%;
+  border: 2px solid #8B6464;
+  padding: 0.4rem;
   margin-top: 2rem;
+}
+
+footer .footer__nav .footer-form .signup_button {
+  background-color: #8B6464;
+  color: #FFF;
 }
 
 .custom-logo-link {
@@ -11844,8 +11847,45 @@ fieldset:disabled .btn {
 }
 
 .contact {
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
+}
+
+.contact__data {
+  background-color: #8B6464;
+  width: 30%;
+  height: 230px;
+  padding: 1rem;
+  color: #FFF;
+  display: block;
+  align-self: center;
+}
+
+.contact__data p {
+  line-height: 2rem;
+  font-weight: 100;
+}
+
+.contact__info {
+  margin-top: 2rem;
+}
+
+.contact__info h2,
+.contact__info .h2 {
+  color: #8B6464;
+}
+
+.contact__form input,
+.contact__form textarea {
+  border: 2px solid #8B6464;
+  padding: 0.5rem;
+}
+
+.contact__form .button {
+  background-color: #8B6464;
+  padding: 0.5rem;
+  width: 10%;
+  color: #FFF;
 }
 
 .post {
@@ -11902,5 +11942,28 @@ fieldset:disabled .btn {
   border: 2px solid #8B6464;
   color: #000;
   align-self: center;
+}
+
+.container .posts {
+  justify-content: space-around;
+}
+
+.container .card {
+  width: 40%;
+  display: block;
+  padding: 1rem;
+  border: 3px solid #8B6464;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.container .card a {
+  color: #8B6464;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container .card p {
+  font-weight: bold;
 }
 
