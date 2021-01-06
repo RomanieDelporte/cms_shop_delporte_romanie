@@ -3,7 +3,7 @@
         <?php 
         
             while(have_posts()) { the_post() ?>
-                <div class="col-6 card">
+                <div class="blog">
                     <h2><?php the_title() ?></h2>                    
                     <div><?php the_content() ?></div>
                 </div>

@@ -11944,26 +11944,91 @@ fieldset:disabled .btn {
   align-self: center;
 }
 
-.container .posts {
-  justify-content: space-around;
+.about {
+  margin-top: 2rem;
 }
 
-.container .card {
-  width: 40%;
-  display: block;
-  padding: 1rem;
-  border: 3px solid #8B6464;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
+.about__us {
+  display: grid;
+  align-content: center;
 }
 
-.container .card a {
+.about__us h2,
+.about__us .h2 {
+  font-size: 50px;
   color: #8B6464;
-  text-decoration: none;
-  font-weight: bold;
 }
 
-.container .card p {
-  font-weight: bold;
+.about__us p {
+  padding: 0.4rem;
+  font-weight: 200;
+}
+
+.about__glasses {
+  margin-top: 10rem;
+}
+
+.about__glasses .row {
+  display: flex;
+  margin-top: 10px;
+}
+
+.about__glasses .row.right {
+  flex-direction: row-reverse;
+}
+
+.about__glasses .row img {
+  width: 60%;
+  height: 50%;
+  margin-right: 9rem;
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+
+.about__glasses .row img:nth-child(1) {
+  margin-top: -10rem;
+}
+
+.about__gallery {
+  display: grid;
+  align-content: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.news {
+  margin-bottom: 2rem;
+}
+
+.news .container .posts {
+  justify-content: space-around;
+  --bs-gutter-x: 0rem;
+}
+
+.news .container .posts__info {
+  border: 2px solid #8B6464;
+  background-color: #8B6464;
+  width: 45%;
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.news .container .posts__info a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.news .container .posts__buttons {
+  border: 2px solid #8B6464;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.news .container .posts__buttons a {
+  text-decoration: none;
+  color: #000;
+  margin-top: 2%;
 }
 

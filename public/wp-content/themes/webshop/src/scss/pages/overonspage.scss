@@ -1,0 +1,51 @@
+@import '../abstracts/colors';
+
+.about {
+   margin-top: 2rem;
+    &__us {
+        display: grid;
+        align-content: center;
+
+        h2 {
+            font-size: 50px;
+            color: $color-bordeaux;
+        }
+
+        p{
+            padding: 0.4rem;
+            font-weight: 200;
+        }
+    }
+
+    &__glasses{
+        margin-top: 10rem;
+    
+        .row {
+            display: flex;
+            margin-top: 10px;
+
+            &.right {
+                flex-direction: row-reverse;
+            }
+
+            img {
+                width: 60%;
+                height: 50%;
+                margin-right: 9rem;
+                margin-bottom: 1rem;
+                padding: 2rem;
+            }
+
+            img:nth-child(1) {
+                margin-top: -10rem;
+            }
+        }
+    }
+
+    &__gallery {
+        display: grid;
+        align-content: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
