@@ -82,7 +82,4 @@
         </div>
     </div>
 </div> 
-<?php get_template_part( 'components/cards', null, array(
-            'type' => 'store',
-)) ?>    
 <?php get_footer(); ?>
