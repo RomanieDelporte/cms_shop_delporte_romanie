@@ -3,31 +3,26 @@
 <div class="news">
     <div class="container">
         <div class="row posts">
-        <?php
-            while(have_posts()) { the_post() ?>
-                <div class="col-6 posts__info">
+            <?php
+                while(have_posts()) { the_post() ?>
+                    <div class="col-6 posts__info">
                     <?php get_template_part('components/featured/medium');?>
-                    <h2>
+                        <h2>
                             <a href="<?php the_permalink() ?>">
-                                <?= the_title() ?>
+                                 <?= the_title() ?>
                             </a>
-                    </h2>
-                    <?php
+                        </h2>
+                        <?php
                 
-                    if(has_excerpt()) {
-                        the_excerpt();
-                    } else {
-                        echo wp_trim_words(get_the_content(),15);
-                    } ?>
-
-
-                </div>
-                
+                            if(has_excerpt()) {
+                                the_excerpt();
+                            } else {
+                                echo wp_trim_words(get_the_content(),15);
+                            } ?>
+                    </div>
             <?php } ?>
-            
         </div>
         <div class="nav-next alignright posts__buttons"><?php previous_posts_link( 'Newer posts' ); ?></div>
-
         <div class="nav-previous alignleft posts__buttons"><?php next_posts_link( 'Older posts' ); ?></div>
     </div>
 </div>

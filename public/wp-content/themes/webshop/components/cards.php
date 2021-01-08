@@ -1,18 +1,20 @@
 <?php
 
-$stores = new WP_Query( array(
-    // if we have a argument type show args 
-    'post-type' => $args['type'] ? $args['type'] : null,
-    'posts_per_page' => 1
-));
+    $loop = new WP_Query( array(
+        // hier controleer je heb ik een argument type dan gebruik type anders is het null
+        'post_type' => $args['type'] ? $args['type'] : null,
+    ));
 
+    while($loop->have_posts()) { $loop->the_post() ?>
 
-    while($stores->have_posts()) { $stores->the_post() ?>
-        <div class="types">
+        <div class="blog">
             <h2>
                 <a href="<?php the_permalink() ?>">
-                <?= the_title() ?>
-                <?= the_content() ?>
+                    <?= the_title() ?>
+                </a>
             </h2>
+            <div class=""
         </div>
-    <?php } wp_reset_postdata(); ?>
+
+
+    <?php } wp_reset_postdata(); ?> 
