@@ -21,6 +21,8 @@
 
    &__info {
        margin-top: 2rem;
+       display: block;
+       align-self: center;
 
        h2 {
            color: $color-bordeaux;
@@ -36,7 +38,7 @@
         .button {
             background-color: $color-bordeaux;
             padding: 0.5rem;
-            width: 10%;
+            width: 20%;
             color: $color-white;
         }
    }

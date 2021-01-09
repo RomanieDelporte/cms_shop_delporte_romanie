@@ -27,7 +27,7 @@ body {
 footer {
   display: flex;
   padding: 1rem 1rem;
-  border-top: 2px solid #C1C1C1;
+  border-top: 2px solid #d1d0d0;
 }
 
 footer .footer__contact h1,
@@ -11868,6 +11868,8 @@ fieldset:disabled .btn {
 
 .contact__info {
   margin-top: 2rem;
+  display: block;
+  align-self: center;
 }
 
 .contact__info h2,
@@ -11884,7 +11886,7 @@ fieldset:disabled .btn {
 .contact__form .button {
   background-color: #8B6464;
   padding: 0.5rem;
-  width: 10%;
+  width: 20%;
   color: #FFF;
 }
 
@@ -11998,11 +12000,19 @@ fieldset:disabled .btn {
 
 .news {
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .news .container .posts {
   justify-content: space-around;
   --bs-gutter-x: 0rem;
+}
+
+.news .container .posts h3,
+.news .container .posts .h3,
+.news .container .posts p {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .news .container .posts__info {
@@ -12019,6 +12029,10 @@ fieldset:disabled .btn {
   color: #FFF;
 }
 
+.news .container .posts__info i {
+  display: block;
+}
+
 .news .container .posts__buttons {
   border: 2px solid #8B6464;
   width: 10%;
@@ -12030,5 +12044,65 @@ fieldset:disabled .btn {
   text-decoration: none;
   color: #000;
   margin-top: 2%;
+}
+
+.stores {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.stores .container .store {
+  justify-content: space-around;
+  --bs-gutter-x: 0rem;
+}
+
+.stores .container .store__info {
+  border: 4px solid #8B6464;
+  background-color: #8B6464;
+  width: 40%;
+  padding: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+.stores .container .store__info h2,
+.stores .container .store__info .h2 {
+  font-size: 25px;
+  color: #FFF;
+}
+
+.stores .container .store__info p {
+  color: #000;
+  font-weight: 200;
+  padding: 0 2%;
+}
+
+.stores .container .store__info p:nth-child(3) {
+  font-size: 15px;
+}
+
+.events {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.events .event {
+  justify-content: space-around;
+  --bs-gutter-x: 0rem;
+}
+
+.events .event__card {
+  border: 2px solid #8B6464;
+  width: 45%;
+}
+
+.events .event__card h2,
+.events .event__card .h2 {
+  color: #8B6464;
+}
+
+.events .event__card h2,
+.events .event__card .h2,
+.events .event__card p {
+  padding: 0.8rem;
 }
 

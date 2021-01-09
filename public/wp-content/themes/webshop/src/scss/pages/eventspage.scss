@@ -1,0 +1,21 @@
+.events {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .event {
+        justify-content: space-around;
+        --bs-gutter-x: 0rem;
+
+         &__card {
+             border: 2px solid $color-bordeaux;
+             width: 45%;
+             h2 {
+                 color: $color-bordeaux;
+             }
+
+             h2, p {
+                 padding: 0.8rem;
+             }
+            
+         }
+    }
+}

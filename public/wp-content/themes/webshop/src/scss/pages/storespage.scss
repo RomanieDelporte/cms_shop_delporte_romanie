@@ -1,7 +1,37 @@
 @import '../abstracts/colors';
 
-.container {
-   .posts {
-       
+
+.stores {
+   margin-bottom: 2rem;
+   margin-top: 2rem;
+   .container {
+         .store {
+            
+            justify-content: space-around;
+            --bs-gutter-x: 0rem;
+            
+            
+            &__info {
+               border: 4px solid $color-bordeaux;
+               background-color: $color-bordeaux;
+               width: 40%;
+               padding: 0.4rem;
+               margin-bottom: 2rem;
+
+            h2 {
+               font-size: 25px;
+               color: $color-white;
+               }
+
+            p {
+               color: $color-black;
+               font-weight: 200;
+               padding: 0 2%;
+            }
+            p:nth-child(3) {
+               font-size: 15px;
+            }
+            }   
+      }
    }
 }

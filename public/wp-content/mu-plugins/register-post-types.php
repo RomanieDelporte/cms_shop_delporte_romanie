@@ -26,5 +26,30 @@ function addStorePostTypes() {
         'show_in_rest' => true,
     ));
 }
+function addEventPostTypes() {
+    register_post_type('event', array(
+        'label' => 'Event',
+        'labels' => array(
+            'add_new_item' => 'Add new Event',
+            'name_admin_bar' =>  'Event',
+            'add_new' =>  'Add Event',
+            'new_item'  =>  'New Event',
+            'edit_item'  =>  'Edit Event',
+            'view_item'  =>  'View Event',
+            'update_item' =>  'View Event',
+            'all_items'  =>  'All Events',
+        ),
+        'public' => true,
+        'show_in_menu' => true,
+        'menu_icon' => 'dashicons-calendar-alt',
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail',
+        ),
+        'show_in_rest' => true,
+    ));
+}
 
 add_action('init', 'addStorePostTypes');
+add_action('init', 'addEventPostTypes');
