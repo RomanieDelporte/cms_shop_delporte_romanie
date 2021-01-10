@@ -5,6 +5,7 @@
 function addStorePostTypes() {
     register_post_type('store', array(
         'label' => 'Store',
+        'rewrite' => array('slug' => 'stores'),
         'labels' => array(
             'add_new_item' => 'Add new Store',
             'name_admin_bar' =>  'Store',
@@ -29,6 +30,7 @@ function addStorePostTypes() {
 function addEventPostTypes() {
     register_post_type('event', array(
         'label' => 'Event',
+        'rewrite' => array('slug' => 'events'),
         'labels' => array(
             'add_new_item' => 'Add new Event',
             'name_admin_bar' =>  'Event',
