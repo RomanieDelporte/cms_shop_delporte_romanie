@@ -1,7 +1,17 @@
 .woocommerce {
+    padding-top: 2rem;
 
     .woocommerce-result-count {
         color: $color-grey;
+    }
+
+    // sort
+    form.woocommerce-ordering{
+        select.orderby {
+            border: 2px solid $color-bordeaux;
+            padding: 0.5rem;
+            font-weight: 200;
+        }
     }
 
     ul.products {
@@ -27,7 +37,7 @@
                 }
 
                 span.onsale {
-                    background-color: $color-darkgrey;
+                    background-color: $color-red;
                 }
             }
 
@@ -37,4 +47,153 @@
             }
         }
     }
+
+
+    // detailpage product
+    div.product {
+        span.onsale {
+            background-color: $color-bordeaux;
+        }
+
+        h1.product_title {
+            color: $color-bordeaux;
+        }
+
+        span.woocommerce-Price-amount {
+            color: $color-darkgrey;
+            border-bottom: none;
+        }
+
+        p.price {
+            color: $color-darkgrey;
+        }
+
+        div.quantity {
+            input.input-text {
+                border: 2px solid $color-bordeaux;
+            }
+
+        }
+
+        button.button.alt {
+            background-color: $color-bordeaux;
+            margin-left: 1rem;
+
+            :hover {
+                background-color: $color-white;
+            }
+        }
+
+        div.product_meta {
+            color: $color-bordeaux;
+
+            span.posted_in {
+                a {
+                    color: $color-black;
+                    text-decoration: none;
+                }
+            }
+
+            span.tagged_as {
+                a {
+                    color: $color-black;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        div.comment-form-rating {
+            p.stars {
+                span {
+                    a {
+                        color: $color-bordeaux;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    // banner viev cart
+    div.woocommerce-message {
+        border-top-color: $color-bordeaux;
+    }
+
+    div.woocommerce-message::before {
+        color: $color-bordeaux;
+    }
+
+    form.woocommerce-cart-form {
+
+        td.product-name {
+            a {
+                color: $color-bordeaux;
+                text-decoration: none;
+            }
+        }
+
+        div.coupon {
+            input.input-text {
+                width: 140px;
+            }
+
+            button.button {
+                background-color: $color-darkgrey;
+            }
+
+            button.button:hover {
+                background-color: $color-bordeaux;
+                color: $color-white;
+            }
+        }
+    }
+
+    div.wc-proceed-to-checkout {
+        a.checkout-button {
+            background-color: $color-bordeaux;
+        }
+
+        a.checkout-button:hover {
+            background-color: $color-darkgrey;
+            color: $color-black;
+        }
+
+    }
+
+    // checkoutpage
+    button.button {
+        background-color: $color-bordeaux;
+    }
+
+    button.button:hover {
+        background-color: $color-darkgrey;
+    }
+
+    div.woocommerce-billing-fields {
+        h3 {
+            color: $color-bordeaux;
+        }
+        label {
+            color: $color-darkgrey;
+            font-weight: 200;
+        }
+    }
+
+    div.woocommerce-checkout-payment {
+        div.form-row {
+            button.button {
+                background-color: $color-bordeaux;
+            }
+        }
+    }
+
+    section.woocommerce-order-details {
+        td.woocommerce-table__product-name {
+            a{
+                color: $color-red;
+            }
+        }
+    }
+
 }

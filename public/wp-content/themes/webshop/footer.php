@@ -1,3 +1,13 @@
+<body>
+
+    <!-- All the document's HTML goes first. -->
+
+    <!-- Then last, before closing the body tag, add: -->
+
+    <?php wp_footer(); ?>
+
+</body>
+
 <footer>
     <div class="container">
         <nav class="col-12 footer">

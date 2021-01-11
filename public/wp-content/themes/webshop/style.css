@@ -12106,8 +12106,18 @@ fieldset:disabled .btn {
   padding: 0.8rem;
 }
 
+.woocommerce {
+  padding-top: 2rem;
+}
+
 .woocommerce .woocommerce-result-count {
   color: #d1d0d0;
+}
+
+.woocommerce form.woocommerce-ordering select.orderby {
+  border: 2px solid #8B6464;
+  padding: 0.5rem;
+  font-weight: 200;
 }
 
 .woocommerce ul.products {
@@ -12134,11 +12144,121 @@ fieldset:disabled .btn {
 }
 
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.onsale {
-  background-color: #979494;
+  background-color: #e03030;
 }
 
 .woocommerce ul.products li.product a.button {
   background-color: #8B6464;
   color: #FFF;
+}
+
+.woocommerce div.product span.onsale {
+  background-color: #8B6464;
+}
+
+.woocommerce div.product h1.product_title,
+.woocommerce div.product .product_title.h1 {
+  color: #8B6464;
+}
+
+.woocommerce div.product span.woocommerce-Price-amount {
+  color: #979494;
+  border-bottom: none;
+}
+
+.woocommerce div.product p.price {
+  color: #979494;
+}
+
+.woocommerce div.product div.quantity input.input-text {
+  border: 2px solid #8B6464;
+}
+
+.woocommerce div.product button.button.alt {
+  background-color: #8B6464;
+  margin-left: 1rem;
+}
+
+.woocommerce div.product button.button.alt :hover {
+  background-color: #FFF;
+}
+
+.woocommerce div.product div.product_meta {
+  color: #8B6464;
+}
+
+.woocommerce div.product div.product_meta span.posted_in a {
+  color: #000;
+  text-decoration: none;
+}
+
+.woocommerce div.product div.product_meta span.tagged_as a {
+  color: #000;
+  text-decoration: none;
+}
+
+.woocommerce div.product div.comment-form-rating p.stars span a {
+  color: #8B6464;
+}
+
+.woocommerce div.woocommerce-message {
+  border-top-color: #8B6464;
+}
+
+.woocommerce div.woocommerce-message::before {
+  color: #8B6464;
+}
+
+.woocommerce form.woocommerce-cart-form td.product-name a {
+  color: #8B6464;
+  text-decoration: none;
+}
+
+.woocommerce form.woocommerce-cart-form div.coupon input.input-text {
+  width: 140px;
+}
+
+.woocommerce form.woocommerce-cart-form div.coupon button.button {
+  background-color: #979494;
+}
+
+.woocommerce form.woocommerce-cart-form div.coupon button.button:hover {
+  background-color: #8B6464;
+  color: #FFF;
+}
+
+.woocommerce div.wc-proceed-to-checkout a.checkout-button {
+  background-color: #8B6464;
+}
+
+.woocommerce div.wc-proceed-to-checkout a.checkout-button:hover {
+  background-color: #979494;
+  color: #000;
+}
+
+.woocommerce button.button {
+  background-color: #8B6464;
+}
+
+.woocommerce button.button:hover {
+  background-color: #979494;
+}
+
+.woocommerce div.woocommerce-billing-fields h3,
+.woocommerce div.woocommerce-billing-fields .h3 {
+  color: #8B6464;
+}
+
+.woocommerce div.woocommerce-billing-fields label {
+  color: #979494;
+  font-weight: 200;
+}
+
+.woocommerce div.woocommerce-checkout-payment div.form-row button.button {
+  background-color: #8B6464;
+}
+
+.woocommerce section.woocommerce-order-details td.woocommerce-table__product-name a {
+  color: #e03030;
 }
 

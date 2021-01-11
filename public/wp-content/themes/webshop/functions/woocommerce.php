@@ -6,3 +6,5 @@ function wooCommerce() {
 }
 
 add_action( 'after_setup_theme','wooCommerce');
+
+
