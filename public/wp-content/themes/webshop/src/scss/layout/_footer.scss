@@ -53,9 +53,13 @@ footer {
                 padding: 0.4rem;
                 margin-top: 2rem;
             }
-            .signup_button {
-                background-color: $color-bordeaux;
-                color: $color-white;
+            .mc4wp-form-fields {
+                p{
+                    input.submit-button {
+                        background-color: $color-bordeaux;
+                        color: $color-white;
+                    }
+                }
             }
          }
     }

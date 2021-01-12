@@ -14,10 +14,11 @@
         <div class="footer__nav">
             <div class="row">
             <div class=" col-4 footer__contact">
-                <h1>Optiek-er</h1>
-                <p>Kpt Cdt Vinckestraat 19</p>
-                <p>8710 Ooigem - belgium</p>
-                <p>info@optieker.be</p>
+            <?php if (is_active_sidebar( 'footer-info' )) { ?>
+                <aside class="widget-area" role="complementary">
+                    <?php dynamic_sidebar( 'footer-info' ); ?>
+                </aside>
+            <?php } ?>
             </div>
             <div class="col-4 footer__nav">
                 <h2>Navigation</h2>

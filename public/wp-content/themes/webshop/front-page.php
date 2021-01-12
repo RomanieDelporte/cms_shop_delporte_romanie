@@ -30,6 +30,7 @@
 </div>
 <div class="container">
     <div class="row posts">
+    
         <?php
                 $posts = new WP_Query( array(
                     'category_name' => 'Brillen',
@@ -39,13 +40,19 @@
                 while($posts->have_posts()) {
                     $posts->the_post() ?>
                     <div class=" col-6 card">
-                        <img
-                        <h4>
-                                <a href="<?php the_permalink() ?>">
+                        <p>
+                            <a href="<?php the_permalink() ?>">
                                     <?= the_title() ?>
-                                    <p><?= the_content() ?></p>
                                 </a>
-                        </h4>
+                        </p>
+                        <?php
+                
+                            if(has_excerpt()) {
+                                the_excerpt();
+                            } else {
+                                echo wp_trim_words(get_the_content());
+                            } ?>
+
                         
 
                     </div>

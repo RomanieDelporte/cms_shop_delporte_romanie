@@ -83,7 +83,7 @@ footer .footer__nav .footer-form input {
   margin-top: 2rem;
 }
 
-footer .footer__nav .footer-form .signup_button {
+footer .footer__nav .footer-form .mc4wp-form-fields p input.submit-button {
   background-color: #8B6464;
   color: #FFF;
 }
@@ -11808,6 +11808,10 @@ fieldset:disabled .btn {
   font-weight: 200;
 }
 
+.container .card .home img {
+  width: 100%;
+}
+
 .container .card:hover {
   background-color: #8B6464;
 }
@@ -12100,10 +12104,19 @@ fieldset:disabled .btn {
   color: #8B6464;
 }
 
+.events .event__card a {
+  text-decoration: none;
+}
+
 .events .event__card h2,
 .events .event__card .h2,
 .events .event__card p {
   padding: 0.8rem;
+}
+
+.post__info p:nth-child(2) {
+  font-weight: 200;
+  padding: 0.2rem;
 }
 
 .woocommerce {
@@ -12260,5 +12273,67 @@ fieldset:disabled .btn {
 
 .woocommerce section.woocommerce-order-details td.woocommerce-table__product-name a {
   color: #e03030;
+}
+
+.about {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 2em;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.about__info {
+  margin-right: 2em;
+  width: 20%;
+  border: 4px solid #8B6464;
+  border-radius: 12px;
+  height: 70%;
+}
+
+.about__info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 50%;
+  border-radius: 10px;
+}
+
+.about__info a {
+  text-decoration: none;
+  color: #8B6464;
+}
+
+.about__info a h2,
+.about__info a .h2 {
+  font-size: 1rem;
+}
+
+.about__member {
+  padding: 0.5rem;
+}
+
+.member {
+  padding-bottom: 2rem;
+}
+
+.member__stores {
+  margin-top: 2rem;
+}
+
+.member__stores h2,
+.member__stores .h2 {
+  color: #8B6464;
+}
+
+.member__stores h3,
+.member__stores .h3 {
+  font-weight: 200;
+  color: #979494;
+}
+
+.member__stores p {
+  padding: 0.4rem;
 }
 

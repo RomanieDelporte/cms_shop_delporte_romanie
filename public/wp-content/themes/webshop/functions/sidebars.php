@@ -29,7 +29,17 @@ function Contact() {
         'after_widget' => '</div>',
     ));
 }
+function FooterInfo() {
+    register_sidebar( array(
+        'name' => __('FooterInfo Area', 'footer_info'),
+        'id' => 'footer-info',
+        'description' => __('Description', 'footer_info'),
+        'before_widget' => '<div class="footer-info">',
+        'after_widget' => '</div>',
+    ));
+}
 
 add_action('widgets_init', 'NewsLetterSignup');
+add_action('widgets_init', 'FooterInfo');
 add_action('widgets_init', 'Search');
 add_action('widgets_init', 'Contact');

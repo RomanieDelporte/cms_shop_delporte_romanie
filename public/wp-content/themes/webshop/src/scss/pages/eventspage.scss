@@ -12,10 +12,24 @@
                  color: $color-bordeaux;
              }
 
+             a {
+                 text-decoration: none;
+             }
+
              h2, p {
                  padding: 0.8rem;
              }
             
          }
+    }
+}
+
+.post {
+
+    &__info {
+        p:nth-child(2) {
+            font-weight: 200;
+            padding: 0.2rem;
+        }
     }
 }
