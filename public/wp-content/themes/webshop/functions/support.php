@@ -1,4 +1,5 @@
 <?php
+// custom logo and title
 
 function addTitleTag() {
     add_theme_support('title-tag');
@@ -16,7 +17,7 @@ function addCustomLogo() {
     ));
 }
 
-
+// active menu item
 function special_nav_class ($classes, $item) {
   if (in_array('current-menu-item', $classes) ){
     $classes[] = 'active ';

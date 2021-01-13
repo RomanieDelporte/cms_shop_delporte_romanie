@@ -13,9 +13,7 @@ while ($loop->have_posts()) { $loop->the_post() ?>
                 <?= the_title() ?>
             </a>
         </h2>
-       
-                
-                <p><?php the_field('eventscontent'); ?></p>
+        <p><?php the_field('eventscontent'); ?></p>
 
     </div>
 <?php } wp_reset_postdata(); ?>

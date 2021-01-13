@@ -3,6 +3,7 @@
 .post {
     margin-top: 2rem;
     margin-bottom: 2rem;
+
     &__info {
 
         h2 {
@@ -10,37 +11,42 @@
         }
     }
 
-  
+
 
     &__category {
         display: flex;
 
-        p{ 
+        p {
             color: $color-bordeaux;
         }
-        ul{
+
+        ul {
             list-style: none;
             display: flex;
         }
+
         li {
             list-style: none;
             margin-right: 2%;
             border: 2px solid $color-bordeaux;
             border-radius: 10px;
-            a{
-                 text-decoration: none;
-                 padding: 2rem;
-                 color: $color-black;
 
-             }
+            a {
+                text-decoration: none;
+                padding: 2rem;
+                color: $color-black;
 
-        }  
+            }
+
+        }
     }
+
     &__tags {
         p {
             margin-top: 2%;
             color: $color-bordeaux;
         }
+
         display: flex;
 
         a {

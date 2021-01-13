@@ -1,5 +1,6 @@
 <?php
 
+// header and footer menu
 function registerMenuLocations() {
     register_nav_menus(array(
         'header-nav' => 'Header Menu',

@@ -3,21 +3,23 @@
 
 .custom-logo-link {
     display: block;
+
     img {
         height: 40px;
         width: auto;
     }
 }
+
 // highlight active menu item
 .current_page_item,
 .current-menu-ancestor {
-    color: $color-red;
+    color: $color-darkbordeaux;
 }
 
-body {    
+body {
     font-family: 'Comfortaa';
     // navigation header
-   
+
     .navigation {
         background-color: $color-white;
         display: flex;
@@ -26,7 +28,7 @@ body {
         margin-top: 1rem;
         height: 8vh;
 
-        ul{
+        ul {
             display: flex;
             justify-content: flex-end;
             align-items: center;
@@ -35,31 +37,27 @@ body {
         }
 
         li {
-           
+
             a {
                 text-decoration: none;
                 color: black;
                 color: inherit;
-                font-weight: 200;
-
-                &:hover {
-                    color:$color-bordeaux;
-                }
-
+                font-weight: bold;
             }
-           
+
             &:not(:last-child) {
                 margin-right: 3rem;
             }
         }
+
         main {
             display: flex;
             flex-direction: column;
             flex: 1;
         }
 
-        
+
     }
 
-    
+
 }

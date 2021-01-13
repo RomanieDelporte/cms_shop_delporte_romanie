@@ -1,6 +1,6 @@
 <?php
 
-
+// setup woocommerce
 function wooCommerce() {
     add_theme_support( 'woocommerce' );
 }

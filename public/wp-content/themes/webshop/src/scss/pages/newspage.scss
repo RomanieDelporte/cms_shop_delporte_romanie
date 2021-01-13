@@ -3,50 +3,54 @@
 .news {
     margin-bottom: 2rem;
     margin-top: 2rem;
+
     .container {
         .posts {
+
             // text archivepages abouve posts
-            h3, p {
+            h3,
+            p {
                 text-align: center;
                 margin-bottom: 2rem;
             }
-    
-            
+
+
             justify-content: space-around;
             --bs-gutter-x: 0rem;
-            
-            
-            &__info {
-            border: 2px solid $color-bordeaux;
-            background-color: $color-bordeaux;
-            width: 45%;
-            padding: 0.4rem;
-            margin-bottom: 2rem;
 
-            a {
-                font-size: 20px;
-                text-decoration: none;
-                color: $color-white;
+
+            &__info {
+                border: 2px solid $color-bordeaux;
+                background-color: $color-bordeaux;
+                width: 45%;
+                padding: 0.4rem;
+                margin-bottom: 2rem;
+
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $color-white;
+                }
+
+                i {
+                    display: block;
+                }
             }
-            i {
-                display: block;
-            }
-            }   
 
             &__buttons {
-            border: 2px solid  $color-bordeaux;
-            width: 10%;
-            display: flex;
-            justify-content: center;
-            a {
-                text-decoration: none;
-                color: $color-black;
-                margin-top: 2%; 
+                border: 2px solid $color-bordeaux;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                    margin-top: 2%;
+                }
+
             }
-            
-            }
-    
+
         }
     }
 }
-

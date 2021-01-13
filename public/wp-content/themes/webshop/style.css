@@ -101,7 +101,7 @@ footer .footer__nav .footer-form .mc4wp-form-fields p input.submit-button {
 
 .current_page_item,
 .current-menu-ancestor {
-  color: #e03030;
+  color: #755454;
 }
 
 body {
@@ -129,11 +129,7 @@ body .navigation li a {
   text-decoration: none;
   color: black;
   color: inherit;
-  font-weight: 200;
-}
-
-body .navigation li a:hover {
-  color: #8B6464;
+  font-weight: bold;
 }
 
 body .navigation li:not(:last-child) {

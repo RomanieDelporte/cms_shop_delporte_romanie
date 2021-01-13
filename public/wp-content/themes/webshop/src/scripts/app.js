@@ -19,7 +19,6 @@ const handleSearch = (e, overlay) => {
 
     Overlay(store.length, overlay)
 
-
     axios.get(`http://webshop.local/wp-json/wp/v2/store?search=${store}`)
     .then(function(response) {
         console.log(response.data);
@@ -49,11 +48,10 @@ const handleSearch = (e, overlay) => {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.querySelector('#js-search');
+    const search = document.querySelector('#js-search');
     const overlay = document.querySelector('#results');
 
-
-    if(searchInput) {
-        searchInput.addEventListener('input', e =>handleSearch(e,overlay));
+    if(search) {
+        search.addEventListener('input', e =>handleSearch(e,overlay));
     }
 })

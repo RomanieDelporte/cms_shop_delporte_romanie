@@ -1,7 +1,7 @@
 <?php
 
 
-
+// make featured images
 function registerThemeSupport() {
     // images
     add_theme_support('post-thumbnails');

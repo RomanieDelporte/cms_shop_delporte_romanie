@@ -1,5 +1,6 @@
 <?php
 
+// forms widgets
 function NewsLetterSignup() {
     register_sidebar( array(
         'name' => __('Footer Area', 'footer_form'),

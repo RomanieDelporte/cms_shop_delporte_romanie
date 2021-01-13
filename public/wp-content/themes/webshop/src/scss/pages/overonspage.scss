@@ -1,7 +1,8 @@
 @import '../abstracts/colors';
 
 .about {
-   margin-top: 2rem;
+    margin-top: 2rem;
+
     &__us {
         display: grid;
         align-content: center;
@@ -11,15 +12,15 @@
             color: $color-bordeaux;
         }
 
-        p{
+        p {
             padding: 0.4rem;
             font-weight: 200;
         }
     }
 
-    &__glasses{
+    &__glasses {
         margin-top: 10rem;
-    
+
         .row {
             display: flex;
             margin-top: 10px;

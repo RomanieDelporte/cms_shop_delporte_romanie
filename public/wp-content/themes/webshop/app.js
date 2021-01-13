@@ -2181,11 +2181,11 @@ var handleSearch = function handleSearch(e, overlay) {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
-  var searchInput = document.querySelector('#js-search');
+  var search = document.querySelector('#js-search');
   var overlay = document.querySelector('#results');
 
-  if (searchInput) {
-    searchInput.addEventListener('input', function (e) {
+  if (search) {
+    search.addEventListener('input', function (e) {
       return handleSearch(e, overlay);
     });
   }

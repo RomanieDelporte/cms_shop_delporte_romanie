@@ -6,7 +6,7 @@
     }
 
     // sort
-    form.woocommerce-ordering{
+    form.woocommerce-ordering {
         select.orderby {
             border: 2px solid $color-bordeaux;
             padding: 0.5rem;
@@ -174,11 +174,13 @@
         h3 {
             color: $color-bordeaux;
         }
+
         label {
             color: $color-darkgrey;
             font-weight: 200;
         }
     }
+
     form.checkout {
         h3 {
             color: $color-bordeaux;
@@ -196,7 +198,7 @@
 
     section.woocommerce-order-details {
         td.woocommerce-table__product-name {
-            a{
+            a {
                 color: $color-red;
             }
         }
