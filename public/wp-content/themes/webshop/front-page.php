@@ -24,7 +24,7 @@
                             </div>
                         <?php }
                         } ?>
-                        <h3>test</h3>
+                        <!-- <h3>test</h3> -->
             </div>
         </div>
     </div>
