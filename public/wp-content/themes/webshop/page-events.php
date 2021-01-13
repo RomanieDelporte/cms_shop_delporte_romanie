@@ -18,8 +18,9 @@
                             </a>
                             <p><?php the_field('date') ?></p>
                             <p><?php the_field('eventscontent'); ?></p>
-                           
+
                     </div>
+
 
             <?php } wp_reset_postdata(); ?> 
         </div>

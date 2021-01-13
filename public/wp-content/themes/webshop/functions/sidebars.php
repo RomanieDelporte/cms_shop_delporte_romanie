@@ -11,15 +11,7 @@ function NewsLetterSignup() {
         'after_title' => '</h3>'
     ));
 }
-function Search() {
-    register_sidebar( array(
-        'name' => __('Search Area', 'search_form'),
-        'id' => 'search-form',
-        'description' => __('Description', 'search_form'),
-        'before_widget' => '<div class="search-form">',
-        'after_widget' => '</div>',
-    ));
-}
+
 function Contact() {
     register_sidebar( array(
         'name' => __('Contact Area', 'contact_form'),
@@ -41,5 +33,4 @@ function FooterInfo() {
 
 add_action('widgets_init', 'NewsLetterSignup');
 add_action('widgets_init', 'FooterInfo');
-add_action('widgets_init', 'Search');
 add_action('widgets_init', 'Contact');

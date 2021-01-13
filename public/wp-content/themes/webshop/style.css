@@ -10,8 +10,10 @@ Version: 0.1
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 7.3.5
+Text Domain: webshop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 */
 * {
   margin: 0;
@@ -97,6 +99,11 @@ footer .footer__nav .footer-form .mc4wp-form-fields p input.submit-button {
   width: auto;
 }
 
+.current_page_item,
+.current-menu-ancestor {
+  color: #e03030;
+}
+
 body {
   font-family: "Comfortaa";
 }
@@ -122,7 +129,7 @@ body .navigation li a {
   text-decoration: none;
   color: black;
   color: inherit;
-  font-weight: bold;
+  font-weight: 200;
 }
 
 body .navigation li a:hover {
@@ -11729,12 +11736,12 @@ fieldset:disabled .btn {
   }
 }
 
-.home {
+.hero {
   width: 100%;
   height: 350px;
 }
 
-.home img {
+.hero img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -11804,11 +11811,16 @@ fieldset:disabled .btn {
   font-weight: bold;
 }
 
+.container .card h2,
+.container .card .h2 {
+  margin-top: 2rem;
+}
+
 .container .card p {
   font-weight: 200;
 }
 
-.container .card .home img {
+.container .card .hero img {
   width: 100%;
 }
 
@@ -11836,18 +11848,46 @@ fieldset:disabled .btn {
 .banner_widget {
   display: grid;
   align-content: center;
+  margin-left: 1rem;
 }
 
-.banner_widget h2,
-.banner_widget .h2 {
-  font-size: 60px;
+.banner_widget h3,
+.banner_widget .h3 {
+  font-size: 45px;
   color: #FFF;
 }
 
-.banner_widget input {
+.banner_widget .btn-shop {
+  text-decoration: none;
+  background-color: #FFF;
+  color: #8B6464;
+  margin-left: 0.4rem;
+  width: 30%;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+.banner_widget #results {
+  margin-top: 2rem;
+  position: relative;
+  background-color: #d1d0d0;
+  width: 50%;
+}
+
+.banner_widget #results ul {
+  line-height: 150%;
+  color: #FFF;
+}
+
+.banner_widget #results ul li {
+  padding-top: 1rem;
+}
+
+.banner_widget #js-search {
+  width: 50%;
   background-color: #8B6464;
   border: 2px solid #FFF;
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 .contact {
@@ -12265,6 +12305,12 @@ fieldset:disabled .btn {
 .woocommerce div.woocommerce-billing-fields label {
   color: #979494;
   font-weight: 200;
+}
+
+.woocommerce form.checkout h3,
+.woocommerce form.checkout .h3 {
+  color: #8B6464;
+  margin-top: 2rem;
 }
 
 .woocommerce div.woocommerce-checkout-payment div.form-row button.button {

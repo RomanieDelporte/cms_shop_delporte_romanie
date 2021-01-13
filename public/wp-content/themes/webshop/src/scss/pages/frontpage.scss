@@ -6,12 +6,13 @@
     &__info {
         padding-top: 1rem;
         align-self: center;
+
         h2 {
             font-size: 3rem;
             font-weight: bold;
         }
 
-        p{
+        p {
             font-weight: 200;
             font-size: 1.2rem;
             padding: 0.2rem;
@@ -46,34 +47,42 @@
 .container {
     .posts {
         justify-content: space-around;
-    } 
-     .card {
+    }
+
+    .card {
         width: 40%;
         display: block;
         padding: 1rem;
         border: 4px solid $color-bordeaux;
         margin-bottom: 4rem;
         margin-top: 2rem;
-        
+
         a {
             color: $color-bordeaux;
             text-decoration: none;
             font-weight: bold;
         }
+
+        h2 {
+            margin-top: 2rem;
+        }
+
         p {
             font-weight: 200;
         }
 
-        .home {
+        .hero {
             img {
                 width: 100%;
             }
         }
-       
+
     }
+
     .card:hover {
         background-color: $color-bordeaux;
-        a{
+
+        a {
             color: $color-white;
         }
     }
@@ -82,26 +91,57 @@
 
 .banner {
     background-color: $color-bordeaux;
+
     &_picture {
         margin-left: -5rem;
-        img {
-           width: 100%;
-           height: 100%;
-        } 
-    }
-    &_widget {
-       display: grid;
-       align-content: center;
 
-        h2 {
-            font-size: 60px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_widget {
+        display: grid;
+        align-content: center;
+        margin-left: 1rem;
+
+        h3 {
+            font-size: 45px;
             color: $color-white;
         }
 
-        input {
+        .btn-shop {
+            text-decoration: none;
+            background-color: $color-white;
+            color: $color-bordeaux;
+            margin-left: 0.4rem;
+            width: 30%;
+            padding: 0.2rem;
+            text-align: center;
+        }
+
+        #results {
+            margin-top: 2rem;
+            position: relative; 
+            background-color: $color-grey;
+            width: 50%;
+            
+            ul{
+                line-height: 150%;
+                color: $color-white;
+
+                li {
+                    padding-top: 1rem;
+                }
+            }
+        }
+
+        #js-search {
+            width: 50%;
             background-color: $color-bordeaux;
             border: 2px solid $color-white;
-            padding: 1rem;
+            padding: 0.3rem;
         }
     }
 }

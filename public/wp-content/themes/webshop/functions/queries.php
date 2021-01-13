@@ -2,7 +2,7 @@
 
 
 function adjustHomeQueries($query) {
-    if(!is_admin() AND is_post_type_archive('events') && is_main_query()) {
+    if(!is_admin() AND is_front_page() && is_main_query()) {
         $query->set('posts_per_page', '2');
     }
 }

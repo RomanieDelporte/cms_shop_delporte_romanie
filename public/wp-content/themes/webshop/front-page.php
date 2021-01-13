@@ -31,33 +31,10 @@
 <div class="container">
     <div class="row posts">
     
-        <?php
-                $posts = new WP_Query( array(
-                    'category_name' => 'Brillen',
-                    'posts_per_page' => 2
-                ));
+        <?php get_template_part('components/card', null, array(
+            'type' => 'event'
+        ))?>
 
-                while($posts->have_posts()) {
-                    $posts->the_post() ?>
-                    <div class=" col-6 card">
-                        <p>
-                            <a href="<?php the_permalink() ?>">
-                                    <?= the_title() ?>
-                                </a>
-                        </p>
-                        <?php
-                
-                            if(has_excerpt()) {
-                                the_excerpt();
-                            } else {
-                                echo wp_trim_words(get_the_content());
-                            } ?>
-
-                        
-
-                    </div>
-                    
-                <?php } wp_reset_postdata(); ?>
     </div>
 </div>
 <div class="banner">
@@ -73,14 +50,10 @@
                 ?>
             </div>
         <div class=" col-6 banner_widget">
-                <h2><?php the_field('textfield'); ?></h2>
-                <?php if (is_active_sidebar( 'search-form' )) { ?>
-                <aside class="widget-area" role="complementary">
-                    <?php dynamic_sidebar( 'search-form' ); ?>
-                </aside>
-                <?php } ?>
-                <div class="banner_field">
-        </div>
+                <h3><?php the_field('textfield'); ?></h3>
+                <input type="search" id="js-search" placeholder="Zoek een filiaal">
+                <div class="banner_field"></div>
+                <div id="results" class="results hidden"></div>
             </div>
         </div>
     </div>

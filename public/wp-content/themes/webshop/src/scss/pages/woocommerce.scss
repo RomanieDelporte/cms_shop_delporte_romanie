@@ -179,6 +179,12 @@
             font-weight: 200;
         }
     }
+    form.checkout {
+        h3 {
+            color: $color-bordeaux;
+            margin-top: 2rem;
+        }
+    }
 
     div.woocommerce-checkout-payment {
         div.form-row {

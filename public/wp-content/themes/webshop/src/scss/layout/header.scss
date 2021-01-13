@@ -8,6 +8,11 @@
         width: auto;
     }
 }
+// highlight active menu item
+.current_page_item,
+.current-menu-ancestor {
+    color: $color-red;
+}
 
 body {    
     font-family: 'Comfortaa';
@@ -35,7 +40,7 @@ body {
                 text-decoration: none;
                 color: black;
                 color: inherit;
-                font-weight: bold;
+                font-weight: 200;
 
                 &:hover {
                     color:$color-bordeaux;

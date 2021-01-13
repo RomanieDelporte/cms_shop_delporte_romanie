@@ -7,8 +7,10 @@ Version: 0.1
 Requires at least: 5.0
 Tested up to: 5.6
 Requires PHP: 7.3.5
+Text Domain: webshop
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 */
 
 
@@ -25,10 +27,9 @@ html, body {
 
 
 
- @import './layout/footer';
- @import './layout/header';
+ @import './layout/index';
  @import './abstracts/index';
  @import './vendor/index';
- @import './components/featured';
+ @import './components/index';
  @import './pages/index';
 
