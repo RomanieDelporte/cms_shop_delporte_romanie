@@ -8,6 +8,7 @@
                     <h2><?php the_title(); ?></h2>
                     <p><?php the_field('date'); ?></p>
                     <p><?php the_field('eventscontent'); ?></p>
+                    <h2>test</h2>
             </div>
     </div>
 </div>
